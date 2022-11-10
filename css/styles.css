@@ -124,6 +124,9 @@ body {
     background-color: var(--secondary-background-color);
 }
 .hero .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 1600px;
     height: 600px;
     text-align: center;
@@ -140,7 +143,7 @@ body {
     font-size: 44px;
     line-height: 1.4;
     margin-bottom: 30px;
-    margin-left: 452px;
+    
 }
 .hero-button {
     display: inline-block;
@@ -178,23 +181,27 @@ body {
     width: 100%;
     height: auto;
 }
-.work-item .item {
+.signature-picture {
 position: relative;
 }
+.block-picture {
+    position: absolute;
+    bottom: 0;
+    content: "";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+}
 .title-picture {
-position: absolute;
-bottom: 0;
-content: "";
-display: inline;
-text-align: center;
-width: 100%;
-height: 70px;
-font-size: 14px;
-letter-spacing: 0.03em;
-line-height: 1.1;
-padding-top: 27px;
-color: var(--secondary-text-color);
-background-color: rgba(47, 48, 58, 0.8);;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    line-height: 1.1;
+    color: var(--secondary-text-color);
+
 }
 .visually-hidden {
     position: absolute;
